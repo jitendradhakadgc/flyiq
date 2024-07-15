@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
+
+:root {
+	--text-light-clr: rgb(157, 173, 190); 
+	--text-medium-clr: #5e5e5e; 
+	--green-clr: #33ca68;
+	--green-hover-clr: #2baa57;
+	--blue-clr: #14335e;
+}
+
+.subscription-payment-page * { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	border: none; 
+	outline: none; 
+	font-family: 'Poppins', sans-serif; 
+	text-transform: capitalize; 
+	transition: all 0.2s linear; 
+} 
+
+.subscription-payment-page .subscription-container { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	min-height: 100vh; 
+	padding: 25px; 
+	background: #dff1f8; 
+} 
+
+.subscription-payment-page .subscription-container form { 
+	width: 700px; 
+	background: #fff; 
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+	border-radius: 12px;
+} 
+
+.subscription-payment-page .subscription-container form .row { 
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 15px; 
+	padding: 20px; 
+	border-radius: 12px;
+} 
+
+.subscription-payment-page .subscription-container form .row .col { 
+	flex: 1 1 250px; 
+} 
+
+.subscription-payment-page .subscription-container .col .title { 
+	font-size: 20px; 
+	color: var(--blue-clr); 
+	padding-bottom: 5px; 
+} 
+
+.subscription-payment-page .subscription-container .col .inputBox { 
+	margin: 15px 0; 
+} 
+
+.subscription-payment-page .subscription-container .col .inputBox label { 
+	margin-bottom: 10px; 
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--text-medium-clr);
+} 
+
+.subscription-payment-page .subscription-container .col .inputBox input, 
+.subscription-payment-page .subscription-container .col .inputBox select { 
+	width: 100%; 
+	border: 1px solid #ccc; 
+	padding: 10px 15px; 
+	font-size: 15px; 
+	border-radius: 6px;
+} 
+
+.subscription-payment-page .subscription-container .col .inputBox input:focus, 
+.subscription-payment-page .subscription-container .col .inputBox select:focus { 
+	border: 1px solid #000; 
+} 
+
+.subscription-payment-page .subscription-container .col .flex { 
+	display: flex; 
+	gap: 15px; 
+} 
+
+.subscription-payment-page .subscription-container .col .flex .inputBox { 
+	flex: 1 1; 
+	margin-top: 5px; 
+} 
+
+.subscription-payment-page .card-accepted label {
+	margin-bottom: 0 !important;
+}
+
+.subscription-payment-page .subscription-container .col .inputBox img { 
+	height: 47px; 
+} 
+
+.subscription-payment-page .submit_btn_container {
+	width: 100%;
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscription-payment-page .subscription-container form .submit_btn { 
+	width: 200px;
+	padding: 12px; 
+	font-size: 17px; 
+	background: var(--green-clr); 
+	color: #fff; 
+	margin-block: 5px; 
+	cursor: pointer; 
+	letter-spacing: 1px; 
+	border-radius: 6px;
+} 
+
+.subscription-payment-page .subscription-container form .submit_btn:hover { 
+	background: var(--green-hover-clr); 
+} 
+
+.subscription-payment-page input::-webkit-inner-spin-button, 
+.subscription-payment-page input::-webkit-outer-spin-button { 
+	display: none; 
+}
+
+.subscription-payment-page .row-App-Overview {
+	background-color: #14335e;
+	color: #fff;
+}
+
+.subscription-payment-page .App-Overview {
+	/* border: 1px solid red; */
+	width: 100%;
+	padding: 16px;
+}
+
+.subscription-payment-page .order-details {
+	margin-block: 16px;
+}
+
+.subscription-payment-page .OrderDetails-items {
+	list-style: none;
+	margin-bottom: 14px;
+}
+
+.subscription-payment-page .ProductSummary-name {
+	font-size: 20px;
+	color: var(--text-light-clr);
+	font-weight: 600;
+}
+
+.subscription-payment-page .ProductSummaryTotalAmount {
+	display: flex;
+	gap: 8px;
+}
+
+.subscription-payment-page .CurrencyAmount {
+	font-size: 32px;
+	font-weight: 800;
+}
+
+.subscription-payment-page .BillingInterval {
+	align-self: center;
+	color: var(--text-light-clr);
+}
+
+.subscription-payment-page .ProductSummaryTotalAmount-billingInterval {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: lowercase;
+}
+
+.subscription-payment-page .LineItem {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+}
+
+.subscription-payment-page .LineItem span {
+	font-size: medium;
+}
+
+.subscription-payment-page .LineItem-description {
+	font-size: 14px;
+	color: rgb(157, 173, 190);
+}
+
+.subscription-payment-page .OrderDetailsFooter-subtotal,
+.subscription-payment-page .OrderDetails-total {
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscription-payment-page .OrderDetailsFooter-subtotal,
+.subscription-payment-page .OrderDetails-total {
+	padding-block: 10px;
+	border-top: 1px solid rgb(58, 77, 99);
+}
+
+.subscription-payment-page .App-Footer {
+	width: 100%;
+	display: flex;
+	font-size: 12px;
+	justify-content: center;
+}
+
+.subscription-payment-page .App-Footer a {
+	color: var(--text-light-clr);
+}
+
+.subscription-payment-page .App-Footer svg {
+	fill: var(--text-light-clr);
+	height: 12px;
+	width: 34px;
+}
+
+.subscription-payment-page .App-Footer .Footer-Links {
+	padding-left: 16px;
+}
+
+.subscription-payment-page .Footer-PoweredBy {
+	padding-right: 16px;
+	border-right: 1px solid var(--text-light-clr);
+}
+
+.subscription-payment-page .Footer-PoweredBy a {
+	text-decoration: none;
+}
+
+.subscription-payment-page .Footer-Links a {
+	margin-right: 6px;
+}
